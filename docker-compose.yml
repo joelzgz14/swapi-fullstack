@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "6969:5050"
+    environment:
+      - SWAPI_BASE_URL=https://swapi.dev/api
+  # frontend placeholder will be added later in /frontend-placeholder or /frontend when implemented

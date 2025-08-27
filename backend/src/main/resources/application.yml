@@ -1,0 +1,14 @@
+server:
+  port: 5050
+
+app:
+  swapi-base-url: ${SWAPI_BASE_URL:https://swapi.dev/api}
+
+spring:
+  webflux:
+    base-path: /api
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.web.reactive: DEBUG
