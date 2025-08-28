@@ -8,8 +8,7 @@ spring:
   webflux:
     base-path: /api
 
-    logging:
-      level:
-        org:
-          springframework:
-            web=DEBUG:
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.web.reactive: DEBUG
