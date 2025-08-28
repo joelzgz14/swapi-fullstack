@@ -31,7 +31,7 @@ public class PeopleController {
       @RequestParam(defaultValue = "15") @Min(1) int size,
       @RequestParam(defaultValue = "") String search,
       @RequestParam(defaultValue = "name") SortKey sort,
-      @RequestParam(defaultValue = "asc") SortDirection dir
+      @RequestParam(defaultValue = "desc") SortDirection dir
   ) {
       return queryService.getEntities(Person.class, page, size, search, sort, dir);
 
