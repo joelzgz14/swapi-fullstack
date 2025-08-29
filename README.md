@@ -78,3 +78,11 @@ Logs del backend:
 
 docker-compose logs backend
 
+
+# Probar tests desde la ruta backend
+cd backend
+mvn test
+
+# Probar test especifico
+mvn -Dtest=PlanetServiceTest test
+
